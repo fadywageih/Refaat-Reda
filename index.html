@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" class="scroll-smooth" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رفعت رضا | مدرب كمال أجسام محترف - خبرة 10 سنوات</title>
+    <meta name="description" content="رفعت رضا - مدرب كمال أجسام محترف بخبرة 10 سنوات في التدريب الرياضي والمكملات الغذائية. تدريب شخصي، برامج غذائية، وتحضير للمسابقات.">
+    <meta name="keywords" content="مدرب كمال اجسام, رفعت رضا, تدريب رياضي, مكملات غذائية, جيم, لياقة بدنية">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkTheme: '#0f0f0f',
+                        primaryRed: '#e63946',
+                        primaryOrange: '#f4a261',
+                        secondaryDark: '#1a1a2e',
+                    },
+                    fontFamily: {
+                        arabic: ['Cairo', 'Almarai', 'Tajawal', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(230, 57, 70, 0.2);
+        }
+        
+        .gallery-img {
+            transition: all 0.4s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .counter {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #e63946;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #e63946, #f4a261);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #e63946, #f4a261);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-darkTheme dark:text-white font-arabic overflow-x-hidden">
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="fixed w-full z-50 bg-white/95 dark:bg-darkTheme/95 backdrop-blur-md shadow-lg py-3 px-5 lg:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <span class="text-3xl">💪</span>
+                <span class="text-xl font-black gradient-text">رفعت رضا</span>
+                <span class="text-xs bg-primaryRed text-white px-2 py-1 rounded-full">خبرة 10+ سنوات</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-8 font-semibold">
+                <li><a href="#home" class="hover:text-primaryRed transition">الرئيسية</a></li>
+                <li><a href="#about" class="hover:text-primaryRed transition">عن المدرب</a></li>
+                <li><a href="#services" class="hover:text-primaryRed transition">الخدمات</a></li>
+                <li><a href="#gallery" class="hover:text-primaryRed transition">معرض الصور</a></li>
+                <li><a href="#contact" class="hover:text-primaryRed transition">اتصل بي</a></li>
+            </ul>
+            
+            <!-- Contact Button & Mobile Menu -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/201272076699" target="_blank" class="hidden lg:flex whatsapp-btn text-white px-5 py-2 rounded-full font-semibold items-center gap-2">
+                    💬 واتساب
+                </a>
+                <button id="darkModeToggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+                    <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+                <button id="mobileMenuBtn" class="block md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Side Menu -->
+        <div id="mobileMenu" class="fixed top-0 right-0 w-64 h-full bg-white dark:bg-secondaryDark shadow-2xl z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+            <div class="p-5">
+                <button id="closeMenuBtn" class="absolute left-5 top-5">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <ul class="flex flex-col gap-6 mt-16 text-center">
+                    <li><a href="#home" class="text-lg font-semibold hover:text-primaryRed">الرئيسية</a></li>
+                    <li><a href="#about" class="text-lg font-semibold hover:text-primaryRed">عن المدرب</a></li>
+                    <li><a href="#services" class="text-lg font-semibold hover:text-primaryRed">الخدمات</a></li>
+                    <li><a href="#gallery" class="text-lg font-semibold hover:text-primaryRed">معرض الصور</a></li>
+                    <li><a href="#contact" class="text-lg font-semibold hover:text-primaryRed">اتصل بي</a></li>
+                    <li class="mt-4"><a href="https://wa.me/201272076699" target="_blank" class="whatsapp-btn text-white px-6 py-2 rounded-full inline-block">💬 واتساب</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 hero-bg relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primaryRed rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-primaryOrange rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-5 text-center relative z-10">
+            <div class="floating">
+                <img src="images/1.jpeg" alt="رفعت رضا - مدرب كمال أجسام" class="w-40 h-40 rounded-full mx-auto border-4 border-primaryRed shadow-2xl object-cover">
+            </div>
+            <h3 class="text-xl md:text-2xl mt-5 text-gray-300">أهلاً بكم، أنا</h3>
+            <h1 class="text-5xl md:text-7xl font-black mt-2 gradient-text">رفعت رضا</h1>
+            <h2 class="text-2xl md:text-3xl mt-3 font-bold">🏆 مدرب كمال أجسام محترف 🏆</h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto mt-5">
+                خبرة <span class="text-primaryRed font-bold">10 سنوات</span> في التدريب الرياضي والمكملات الغذائية | أساعدك لتحصل على الجسم الذي تحلم به
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full font-bold text-lg">احجز جلستك التدريبية</a>
+                <a href="https://wa.me/201272076699" target="_blank" class="whatsapp-btn text-white px-8 py-3 rounded-full font-bold text-lg inline-flex items-center gap-2">
+                    💬 تواصل واتساب
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="flex justify-center gap-4 mt-10">
+                <a href="https://www.tiktok.com/@boyka.mnmmn7?_r=1&_t=ZS-95GoEr6Tpey" target="_blank" class="bg-black p-3 rounded-full hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/share/1N5Vm7JTK9/?mibextid=wwXIfr" target="_blank" class="bg-[#1877f2] p-3 rounded-full hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"></path>
+                    </svg>
+                </a>
+                <a href="https://wa.me/201272076699" target="_blank" class="bg-[#25D366] p-3 rounded-full hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.576 2.032.884 3.148.884h.002c3.18 0 5.767-2.586 5.768-5.766.001-3.18-2.585-5.767-5.767-5.767zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.06-.282-.085-.582-.197-.9-.368-1.49-.794-2.448-2.657-2.522-2.78-.074-.123-.598-.798-.598-1.523 0-.725.38-1.08.514-1.228.135-.148.292-.186.389-.186.097 0 .194.006.28.087.162.098.634.622.806 1.074.086.226.146.488.064.754-.082.266-.194.362-.305.466-.112.104-.146.146-.208.244-.062.098-.104.187-.042.365.062.178.276.598.592.958.444.506.983.848 1.567 1.08.219.087.38.123.478.114.14-.013.418-.168.474-.336.056-.168.056-.306.04-.336-.016-.03-.062-.05-.124-.082-.062-.032-.292-.144-.416-.202-.124-.058-.208-.082-.296.062-.088.144-.344.336-.422.414-.078.078-.156.09-.28.03-.124-.06-.526-.24-1.002-.624-.464-.374-.776-.874-.866-1.022-.09-.148-.01-.228.064-.3.064-.064.144-.168.216-.252.072-.084.096-.144.144-.24.048-.096.024-.18-.012-.252-.036-.072-.296-.748-.406-1.022-.11-.274-.222-.226-.296-.23h-.256c-.09 0-.23.03-.354.168-.124.138-.472.46-.472 1.126 0 .666.484 1.306.552 1.398.068.092.924 1.486 2.258 2.026 1.334.54 1.334.36 1.574.338.24-.022.774-.316.884-.632.11-.316.11-.588.078-.632-.032-.044-.124-.072-.208-.108z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="py-20 px-5">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="text-primaryRed font-bold text-lg">من أنا</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-2">رفعت رضا</h2>
+                <div class="w-20 h-1 bg-primaryRed mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-2/5">
+                    <img src="images/2.jpeg" alt="رفعت رضا - تدريب" class="rounded-2xl shadow-2xl w-full object-cover">
+                </div>
+                <div class="md:w-3/5">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
+                        أنا <span class="text-primaryRed font-bold">رفعت رضا</span>، مدرب كمال أجسام محترف. بدأت رحلتي في عالم الرياضة منذ أكثر من 10 سنوات، 
+                        وحولت شغفي إلى مهنة أساعد من خلالها الآخرين على تحقيق أهدافهم البدنية.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
+                        أؤمن بأن الجسم القوي يحتاج إلى <span class="font-bold">تدريب صحيح + تغذية متوازنة + مكملات غذائية مناسبة</span>. 
+                        خلال مسيرتي، دربت أكثر من <span class="text-primaryRed font-bold">500 متدرب</span> وحققت معهم نتائج مذهلة.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="text-center p-4 bg-white dark:bg-secondaryDark rounded-xl shadow">
+                            <div class="text-3xl font-bold text-primaryRed">10+</div>
+                            <div class="text-sm">سنوات خبرة</div>
+                        </div>
+                        <div class="text-center p-4 bg-white dark:bg-secondaryDark rounded-xl shadow">
+                            <div class="text-3xl font-bold text-primaryRed">500+</div>
+                            <div class="text-sm">متدرب ناجح</div>
+                        </div>
+                        <div class="text-center p-4 bg-white dark:bg-secondaryDark rounded-xl shadow">
+                            <div class="text-3xl font-bold text-primaryRed">100%</div>
+                            <div class="text-sm">رضا العملاء</div>
+                        </div>
+                        <div class="text-center p-4 bg-white dark:bg-secondaryDark rounded-xl shadow">
+                            <div class="text-3xl font-bold text-primaryRed">24/7</div>
+                            <div class="text-sm">دعم مستمر</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="py-20 px-5 bg-gray-100 dark:bg-secondaryDark">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="text-primaryRed font-bold text-lg">ماذا أقدم</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-2">خدماتي التدريبية</h2>
+                <div class="w-20 h-1 bg-primaryRed mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">🏋️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تدريب شخصي 1v1</h3>
+                    <p class="text-gray-600 dark:text-gray-400">جلسات تدريب فردية مخصصة حسب مستواك وأهدافك مع متابعة مستمرة</p>
+                </div>
+                
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تدريب أونلاين</h3>
+                    <p class="text-gray-600 dark:text-gray-400">خطط تدريبية مرسلة عبر التطبيق مع متابعة أسبوعية وتغذية راجعة</p>
+                </div>
+                
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">🥗</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">خطط تغذية ومكملات</h3>
+                    <p class="text-gray-600 dark:text-gray-400">خطط غذائية متكاملة مع توصيات علمية للمكملات المناسبة</p>
+                </div>
+                
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">قياسات وتقييم دوري</h3>
+                    <p class="text-gray-600 dark:text-gray-400">قياسات الجسم ونسبة الدهون والعضلات شهرياً مع تقارير مفصلة</p>
+                </div>
+                
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تحضير للمسابقات</h3>
+                    <p class="text-gray-600 dark:text-gray-400">تحضير متكامل للمشاركة في مسابقات كمال الأجسام</p>
+                </div>
+                
+                <div class="service-card bg-white dark:bg-darkTheme p-6 rounded-2xl shadow-lg text-center">
+                    <div class="w-20 h-20 bg-primaryRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">🩺</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تأهيل إصابات رياضية</h3>
+                    <p class="text-gray-600 dark:text-gray-400">برامج تأهيلية بعد الإصابات تحت إشراف متخصص</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="gallery" class="py-20 px-5">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="text-primaryRed font-bold text-lg">معرض الصور</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-2">أعمالي وإنجازاتي</h2>
+                <div class="w-20 h-1 bg-primaryRed mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/1.jpeg" alt="رفعت رضا" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/2.jpeg" alt="تدريب" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/3.jpeg" alt="تمارين" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/4.jpeg" alt="نتائج" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/5.jpeg" alt="بطل" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg">
+                    <img src="images/6.jpeg" alt="جيم" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img overflow-hidden rounded-2xl shadow-lg sm:col-span-2 md:col-span-1">
+                    <img src="images/7.jpeg" alt="تحضير" class="w-full h-72 object-cover hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-20 px-5 bg-gradient-to-r from-primaryRed/10 to-primaryOrange/10">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-12">
+                <span class="text-primaryRed font-bold text-lg">تواصل معي</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-2">احجز جلستك الآن</h2>
+                <div class="w-20 h-1 bg-primaryRed mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="bg-white dark:bg-darkTheme rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 bg-primaryRed text-white">
+                        <h3 class="text-2xl font-bold mb-4">معلومات الاتصال</h3>
+                        <p class="mb-6">تواصل معي مباشرة عبر الواتساب للحجز والاستشارات</p>
+                        
+                        <div class="space-y-4">
+                            <a href="https://wa.me/201272076699" target="_blank" class="flex items-center gap-3 hover:bg-white/20 p-2 rounded-lg transition">
+                                <span class="text-2xl">💬</span>
+                                <span class="text-xl">واتساب: 01272076699</span>
+                            </a>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">📍</span>
+                                <span>الجيزة، مصر | تدريب أونلاين حول العالم</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <p class="font-bold mb-3">تابعني على:</p>
+                            <div class="flex gap-3">
+                                <a href="https://www.tiktok.com/@boyka.mnmmn7?_r=1&_t=ZS-95GoEr6Tpey" target="_blank" class="bg-black/30 px-4 py-2 rounded-full hover:bg-black transition">🎵 تيك توك</a>
+                                <a href="https://www.facebook.com/share/1N5Vm7JTK9/?mibextid=wwXIfr" target="_blank" class="bg-black/30 px-4 py-2 rounded-full hover:bg-black transition">📘 فيسبوك</a>
+                                <a href="https://wa.me/201272076699" target="_blank" class="bg-[#25D366]/30 px-4 py-2 rounded-full hover:bg-[#25D366] transition">💬 واتساب</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <form action="https://formspree.io/f/xregvoyb" method="POST">
+                            <input type="hidden" name="access_key" value="00841dcd-3462-47b0-9823-c3c2c081802e">
+                            <div class="mb-4">
+                                <input type="text" name="name" placeholder="الاسم الكامل" required class="w-full p-3 border rounded-xl dark:bg-secondaryDark dark:border-gray-700">
+                            </div>
+                            <div class="mb-4">
+                                <a href="https://wa.me/201272076699" target="_blank" class="flex items-center justify-center gap-2 whatsapp-btn text-white p-3 rounded-xl font-semibold text-center w-full">
+                                    💬 تواصل عبر واتساب
+                                </a>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" name="email" placeholder="البريد الإلكتروني" required class="w-full p-3 border rounded-xl dark:bg-secondaryDark dark:border-gray-700">
+                            </div>
+                            <div class="mb-4">
+                                <textarea rows="4" name="message" placeholder="اكتب رسالتك هنا..." required class="w-full p-3 border rounded-xl dark:bg-secondaryDark dark:border-gray-700"></textarea>
+                            </div>
+                            <button type="submit" class="w-full btn-primary text-white py-3 rounded-xl font-bold text-lg">إرسال رسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-darkTheme text-white py-8 text-center">
+        <div class="container mx-auto px-5">
+            <div class="text-3xl mb-3">💪 رفعت رضا</div>
+            <p class="text-gray-400 mb-3">مدرب كمال أجسام محترف - خبرة 10 سنوات في التدريب والمكملات الغذائية</p>
+            <a href="https://wa.me/201272076699" target="_blank" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition">
+                💬 واتساب: 01272076699
+            </a>
+            <p class="text-gray-500 text-sm mt-3">© 2024 جميع الحقوق محفوظة - رفعت رضا</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const darkToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
+        }
+        darkToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+        
+        // Mobile Menu
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const closeBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+    </script>
+</body>
+</html>
